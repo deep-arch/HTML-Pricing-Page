@@ -98,6 +98,8 @@ button {
     cursor: pointer;
     border-radius: 4px;
     font-size: 11px;
+	letter-spacing: 0.1em;
+    word-spacing: 0.2em;
 }
 
 button:hover {
