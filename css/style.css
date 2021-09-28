@@ -1,0 +1,187 @@
+* {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+body {
+    background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+    background-color: hsl(240, 78%, 98%);
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    background-size: 275px;
+    margin: 0 0 30px 0;
+}
+
+.header {
+    margin-top: 30px;
+    color: hsl(233, 13%, 49%);
+    font-size: 30px;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.container-1 p {
+    margin: 15px;
+    align-self: center;
+    color: hsl(233, 13%, 49%);
+}
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+card{
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 8px 8px 8px #e2e3e5;
+}
+
+card:hover {
+    padding: 21px;  
+    box-shadow: 8px 8px 8px #a1a4a8;
+}
+
+.sides {
+    align-self: center;
+    background-color: #fff;
+    height: 300px;
+    width: 250px;
+}
+
+.middle {
+    background: linear-gradient( to bottom right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #fff;
+    height: 350px;
+    width: 250px;
+}
+
+.basic,
+.master {
+    color: hsl(232, 13%, 33%);
+}
+
+.sidePrice {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: hsl(232, 13%, 33%);
+}
+
+.middlePrice {
+    font-size: 40px;
+}
+
+hr {
+    opacity: 30%;
+    color: #fff;
+}
+
+section section {
+    font-size: 11px;
+}
+
+.sides section {
+    color: hsl(232, 13%, 33%);
+}
+
+button {
+    width: 240px;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+button:hover {
+    box-shadow: 3px 3px 3px #a1a4a8;
+}
+
+.sides button {
+    background: linear-gradient( to bottom right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    top: 10px;
+    color: #fff;
+}
+
+.sides button:hover{
+    background: #fff;
+    color: hsl(237, 63%, 64%);
+    border: 1px solid hsl(237, 63%, 64%);
+}
+
+.middle button {
+    color: hsl(237, 63%, 64%);
+    top: 10px;
+    margin: 12px 0;
+}
+
+.middle button:hover{
+    background: linear-gradient( to bottom right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.switch {
+    position: relative;
+    margin: 15px;
+    width: 60px;
+    height: 34px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 35px;
+    background: linear-gradient( to bottom right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+input:checked + .slider:before {
+    transform: translateX(-26px);
+}
+
+@media screen and (max-width:500px) {
+    body {
+        background-image: url("../images/bg-top.svg");
+        background-color: hsl(240, 78%, 98%);
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: top right;
+    }
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1100px;
+    }
+    .middle {
+        height: 310px;
+        width: 250px;
+        align-self: center;
+    }
+    .middle button {
+        margin: 0;
+    }
+}
