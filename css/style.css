@@ -5,16 +5,19 @@
 }
 
 body {
+    font-family: "Montserrat", sans-serif;
     background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
     background-color: hsl(240, 78%, 98%);
     background-repeat: no-repeat;
     background-position: top right, bottom left;
+    height: 520px;
     background-size: 275px;
-    margin: 0 0 30px 0;
+    margin: 0 0 40px 0;
 }
 
 .header {
     margin-top: 30px;
+    margin-bottom: 15px;
     color: hsl(233, 13%, 49%);
     font-size: 30px;
 }
@@ -34,7 +37,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 card{
@@ -157,6 +160,7 @@ button:hover {
     bottom: 5px;
     border-radius: 50%;
     background-color: #fff;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
